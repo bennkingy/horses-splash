@@ -44,6 +44,16 @@
     cursor: pointer;
 }
 
+@media(max-width: 700px) {
+  .slide {
+  height: initial !important; 
+  width: initial !important;
+  margin: 0 20px;
+}
+    .slideTwo, .slideThree {height: 85px;
+    width: 273px;}
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -59,6 +69,6 @@
 }
 
 .slideTwo:hover, .slideThree:hover, .slide:hover {
-opacity: 0.85;
+  opacity: 0.85;
   transition: opacity 0.3s ease-in-out;
 }
