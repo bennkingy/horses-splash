@@ -44,16 +44,6 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-  .slide {
-  height: initial !important; 
-  width: initial !important;
-  margin: 0 20px;
-}
-    .slideTwo, .slideThree {height: 85px;
-    width: 273px;}
-}
-
 .button-container {
   display: flex;
   justify-content: center;
