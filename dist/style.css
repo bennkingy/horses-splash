@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 110vw;
+  height: 110vh;
+  object-fit: cover; /* This ensures the image covers the container without stretching */
+  z-index: 1; /* Make sure it's behind the content */
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 2; /* This keeps the content above the background */
+}
+
+.slide {
+  height: 215px !important; /* Half the original height */
+  width: 319px !important; /* Half the original width */
+  margin-bottom: 30px; /* Space below the logo */
+    cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slideTwo, .slideThree {
+  height: 40px; /* Adjust button size */
+  width: 130px;
+  margin: 0 10px; /* Space between the buttons */
+  cursor: pointer;
+}
+
+.slideTwo:hover, .slideThree:hover, .slide:hover {
+opacity: 0.85;
+  transition: opacity 0.3s ease-in-out;
+}
